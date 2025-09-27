@@ -1,0 +1,79 @@
+/* REPL Output Styles */
+.code-area {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #a9b7c6;
+}
+
+.code-area .paragraph-box:has-caret {
+    -fx-background-color: #214283;
+}
+
+.code-area .paragraph-text {
+    -fx-fill: #a9b7c6;
+}
+
+/* Input styles */
+.input {
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* Result styles */
+.result {
+    -fx-fill: #6a8759;
+    -fx-font-weight: bold;
+}
+
+/* Output styles */
+.output {
+    -fx-fill: #a9b7c6;
+}
+
+/* Error styles */
+.error {
+    -fx-fill: #ff6b68;
+    -fx-font-weight: bold;
+}
+
+/* Line numbers */
+.lineno {
+    -fx-background-color: #313335;
+    -fx-text-fill: #606366;
+    -fx-padding: 0.0em 0.5em 0.0em 0.5em;
+    -fx-border-color: #515658;
+    -fx-border-width: 0 1 0 0;
+}
+
+/* Scroll bars */
+.scroll-bar:horizontal {
+    -fx-background-color: #3c3f41;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #3c3f41;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: #3c3f41;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #3c3f41;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #5e6062;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #5e6062;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #a9b7c6;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: #a9b7c6;
+}

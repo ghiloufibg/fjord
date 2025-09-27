@@ -1,0 +1,341 @@
+/* Fjord IDE Dark Theme */
+
+/* Base colors */
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
+    -fx-font-size: 12px;
+    -fx-base: #2b2b2b;
+    -fx-background: #2b2b2b;
+    -fx-control-inner-background: #3c3c3c;
+    -fx-control-inner-background-alt: #404040;
+    -fx-text-fill: #cccccc;
+}
+
+/* Menu and toolbar styling */
+.menu-bar {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #cccccc;
+}
+
+.menu-bar .menu:showing {
+    -fx-background-color: #4f4f4f;
+}
+
+.context-menu {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+}
+
+.menu-item:focused {
+    -fx-background-color: #0078d4;
+}
+
+.tool-bar {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.button {
+    -fx-background-color: #4f4f4f;
+    -fx-text-fill: #cccccc;
+    -fx-border-color: #666666;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.button:hover {
+    -fx-background-color: #5a5a5a;
+}
+
+.button:pressed {
+    -fx-background-color: #0078d4;
+}
+
+/* Tab pane styling */
+.tab-pane {
+    -fx-tab-min-width: 100px;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #2b2b2b;
+}
+
+.tab {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 1 1 0 1;
+    -fx-text-fill: #cccccc;
+}
+
+.tab:selected {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #ffffff;
+}
+
+.tab .tab-close-button {
+    -fx-background-color: transparent;
+}
+
+.tab .tab-close-button:hover {
+    -fx-background-color: #666666;
+}
+
+/* Project explorer styling */
+.tree-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 1 0 0;
+}
+
+.tree-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+}
+
+.tree-cell:selected {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: #ffffff;
+}
+
+.tree-cell:hover {
+    -fx-background-color: #4f4f4f;
+}
+
+/* Output console styling */
+.text-area {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #cccccc;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+    -fx-font-size: 12px;
+    -fx-border-color: #555555;
+    -fx-control-inner-background: #1e1e1e;
+}
+
+.text-area .content {
+    -fx-background-color: #1e1e1e;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: #1e1e1e;
+}
+
+/* Code area syntax highlighting */
+.code-area {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #cccccc;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+}
+
+.code-area .keyword {
+    -fx-fill: #569cd6;
+    -fx-font-weight: bold;
+}
+
+.code-area .boolean-literal {
+    -fx-fill: #569cd6;
+    -fx-font-weight: bold;
+}
+
+.code-area .number-literal {
+    -fx-fill: #b5cea8;
+}
+
+.code-area .string-literal {
+    -fx-fill: #ce9178;
+}
+
+.code-area .identifier {
+    -fx-fill: #cccccc;
+}
+
+.code-area .operator {
+    -fx-fill: #cccccc;
+    -fx-font-weight: bold;
+}
+
+.code-area .punctuation {
+    -fx-fill: #cccccc;
+}
+
+.code-area .delimiter {
+    -fx-fill: #cccccc;
+}
+
+.code-area .comment {
+    -fx-fill: #6a9955;
+    -fx-font-style: italic;
+}
+
+.code-area .error {
+    -fx-underline: true;
+    -fx-strikethrough: false;
+    -fx-border-color: #f44747;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-style: segments(2, 2, 2, 2);
+}
+
+/* Line numbers */
+.code-area .lineno {
+    -fx-background-color: #2d2d30;
+    -fx-text-fill: #858585;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+    -fx-font-size: 12px;
+    -fx-padding: 0 5 0 5;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 0 1 0 0;
+}
+
+/* Scroll bars */
+.scroll-bar {
+    -fx-background-color: #3c3c3c;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #686868;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #7e7e7e;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #9e9e9e;
+}
+
+/* Table views (for problems panel) */
+.table-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-control-inner-background: #2b2b2b;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 1 1 0;
+}
+
+.table-view .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #4f4f4f;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #cccccc;
+    -fx-border-color: #555555;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.text-field:focused {
+    -fx-border-color: #0078d4;
+    -fx-border-width: 2;
+}
+
+/* Check boxes */
+.check-box {
+    -fx-text-fill: #cccccc;
+}
+
+.check-box .box {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #0078d4;
+}
+
+/* List views */
+.list-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-control-inner-background: #2b2b2b;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+}
+
+.list-cell:selected {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:hover {
+    -fx-background-color: #4f4f4f;
+}
+
+/* Completion list */
+.completion-list {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/* Split panes */
+.split-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+.split-pane .split-pane-divider {
+    -fx-background-color: #555555;
+    -fx-border-color: transparent;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #cccccc;
+}
+
+/* Titled panes */
+.titled-pane {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #cccccc;
+}
+
+.titled-pane .title {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #cccccc;
+}
+
+.titled-pane .content {
+    -fx-background-color: #2b2b2b;
+}

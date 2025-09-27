@@ -1,0 +1,115 @@
+/* Fjord IDE Styles */
+
+/* Main application styling */
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
+    -fx-font-size: 12px;
+    -fx-base: #f4f4f4;
+    -fx-background: #f4f4f4;
+}
+
+/* Menu and toolbar styling */
+.menu-bar {
+    -fx-background-color: #e8e8e8;
+}
+
+.tool-bar {
+    -fx-background-color: #e8e8e8;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Tab pane styling */
+.tab-pane {
+    -fx-tab-min-width: 100px;
+}
+
+.tab {
+    -fx-background-color: #e0e0e0;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1 1 0 1;
+}
+
+.tab:selected {
+    -fx-background-color: white;
+}
+
+/* Project explorer styling */
+.tree-view {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 1 0 0;
+}
+
+/* Output console styling */
+.text-area {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+    -fx-font-size: 12px;
+}
+
+/* Code area syntax highlighting */
+.code-area {
+    -fx-background-color: white;
+    -fx-text-fill: #000000;
+}
+
+.code-area .keyword {
+    -fx-fill: #0033b3;
+    -fx-font-weight: bold;
+}
+
+.code-area .boolean-literal {
+    -fx-fill: #0033b3;
+    -fx-font-weight: bold;
+}
+
+.code-area .number-literal {
+    -fx-fill: #1750eb;
+}
+
+.code-area .string-literal {
+    -fx-fill: #067d17;
+}
+
+.code-area .identifier {
+    -fx-fill: #000000;
+}
+
+.code-area .operator {
+    -fx-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.code-area .punctuation {
+    -fx-fill: #000000;
+}
+
+.code-area .delimiter {
+    -fx-fill: #000000;
+}
+
+.code-area .comment {
+    -fx-fill: #808080;
+    -fx-font-style: italic;
+}
+
+.code-area .error {
+    -fx-underline: true;
+    -fx-strikethrough: false;
+    -fx-border-color: #ff0000;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-style: segments(2, 2, 2, 2);
+}
+
+/* Line numbers */
+.code-area .lineno {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #666666;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+    -fx-font-size: 12px;
+    -fx-padding: 0 5 0 5;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 1 0 0;
+}
